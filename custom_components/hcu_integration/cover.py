@@ -387,6 +387,7 @@ class HcuGarageDoorCover(HcuBaseEntity, CoverEntity):
             self._attr_supported_features = (
                 CoverEntityFeature.OPEN | CoverEntityFeature.CLOSE
             )
+
         self._is_ventilationPositionSupported = self._channel.get(
             "ventilationPositionSupported", False
         )
